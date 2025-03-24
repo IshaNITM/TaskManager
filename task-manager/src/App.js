@@ -1,21 +1,40 @@
-
+// src/App.js
 import React from 'react';
 import { Provider } from 'react-redux';
-import { store } from './store';
+import { store } from './app/store'; // Updated path
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 import Dashboard from './pages/Dashboard';
-import './App.css';
+import Statistics from './pages/Statistics';
+import Layout from './components/Layout';
+
+const theme = createTheme({
+  palette: {
+    mode: 'light',
+    primary: {
+      main: '#3f51b5',
+    },
+    secondary: {
+      main: '#f50057',
+    },
+  },
+});
 
 function App() {
   return (
     <Provider store={store}>
-      <div className="app">
-        <header className="app-header">
-          <h1>Task Tracker</h1>
-        </header>
-        <main className="app-main">
-          <Dashboard />
-        </main>
-      </div>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/stats" element={<Statistics />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </ThemeProvider>
     </Provider>
   );
 }
