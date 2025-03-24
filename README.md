@@ -1,6 +1,8 @@
 # Task Tracker 🚀
 
-![Task Tracker Screenshot](screenshot.png)
+![image](https://github.com/user-attachments/assets/201d1a41-9ddc-4086-952f-10e121b82f41)
+![image](https://github.com/user-attachments/assets/fe561da3-b417-4081-9c39-0e19a9cc08a4)
+
 
 A responsive task manager built with:
 - React + Redux Toolkit
