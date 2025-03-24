@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/IshaNITM/TaskManager/static/css/main.e6c13ad2.css",
+    "main.js": "/IshaNITM/TaskManager/static/js/main.24a32a0e.js",
+    "index.html": "/IshaNITM/TaskManager/index.html",
+    "main.e6c13ad2.css.map": "/IshaNITM/TaskManager/static/css/main.e6c13ad2.css.map",
+    "main.24a32a0e.js.map": "/IshaNITM/TaskManager/static/js/main.24a32a0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.24a32a0e.js"
+  ]
+}
